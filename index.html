@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Bootstrap - Módulo 13</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .container{
+            padding: 32px;
+        }
+
+        .col {
+            padding: 8px;
+            
+        }
+
+        .col img {
+            height: 25rem;
+        }
+
+        .social-links img {
+            height: 24px;
+        }
+
+        .social-links li {
+            display: inline;
+            margin-right: 8px;
+        }
+
+        .social-links li a {
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #1c6166;
+            color: #ecf0f1;
+            padding: 4px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="./images/wc.jpg" />
+                    <div class="carousel-caption">
+                        <h2>World of Warcraft</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./images/diablo.png" />
+                    <div class="carousel-caption">
+                        <h2>Diablo 4</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./images/left.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Left 4 Dead</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./images/lenda.jpg" />
+                    <div class="carousel-caption">
+                        <h2>A Lenda do Herói</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-4 col-md-6 col-sm-12 w">
+                <article class="card text-bg-dark">
+                    <img src="./images/ne.jpg" />
+                    <div class="card-body">
+                        <h4 class="card-title">Resident Evil 3</h4>
+                        <p class="card-text">
+                            Vai dizer que você não se borrava todo quando esse cara surgia dando aquele cascudão???
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col col-lg-4 col-md-6 col-sm-12">
+                <article class="card text-bg-dark">
+                    <img src="./images/age.jpg" />
+                    <div class="card-body">
+                        <h4 class="card-title">Age of Mythology</h4>
+                        <p class="card-text">
+                            Quantas horas de jogo... Hoje ainda é melhor, podendo jogar online de maneira fácil.
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col col-lg-4 col-md-6 col-sm-12">
+                <article class="card text-bg-dark">
+                    <img src="./images/sf.jpg" />
+                    <div class="card-body">
+                        <h4 class="card-title">Syphon Filter 3</h4>
+                        <p class="card-text">
+                            Nada para fazer... Zera pela milésima vez! Jogo em 3ª pessoa da minha época de moleque.
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col col-lg-4 col-md-6 col-sm-12">
+                <article class="card text-bg-dark">
+                    <img src="./images/at.jpg" />
+                    <div class="card-body">
+                        <h4 class="card-title">Alone in the Dark 4</h4>
+                        <p class="card-text">
+                            O gráfico não era igual na foto... mas o jogo era foda!!!
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col col-lg-4 col-md-6 col-sm-12">
+                <article class="card text-bg-dark">
+                    <img src="./images/wcf.jpg" />
+                    <div class="card-body">
+                        <h4 class="card-title">War Craft</h4>
+                        <p class="card-text">
+                            Uma franquia Imbatível! Uma história bem feita e bem amarrada.
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+            <!-- DAR UM JEITO DE FAZER AS IMAGENS FICAREM DO MESMO TAMANHO -->
+        </div>
+    </div>
+
+    <div>
+        <h3>Me acompanhe</h3>
+        <ul class="social-links end-0">
+            <li>
+                <a href="#" title="Siga-me no Instagram">
+                    <img src="./images/instagram.png" alt="Logo do Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Siga-me no Facebook">
+                    <img src="./images/facebook.png" alt="Logo do Facebook">
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Siga-me no Twitch">
+                    <img src="./images/twitch.png" alt="Logo do Twitch">
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Siga-me no Discord">
+                    <img src="./images/discord.png" alt="Logo do Discord">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h3>Venha até mim</h3>
+        <p>
+            Rua Bootstrap n° 13, Vila HTML - Neverland - ZX
+        </p>
+    </div>
+</div>
+</div>
+</section>
+<footer>
+<div class="container">
+<p>
+    &copy; Meu jogo favorito - Todos os direitos reservados - 2024
+</p>
+</div>
+</footer>
+
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
